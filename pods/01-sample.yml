@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 01-sample
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+#status: {}
+
+
+# kubectl apply -f 01-sample.yml
+
+# kubectl get pods
+# kubectl get pod 01-sample
+
+# kubectl delete -f 01-sample.yml
+
+# kubectl delete pod test
+
+
