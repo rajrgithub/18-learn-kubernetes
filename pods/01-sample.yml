@@ -13,9 +13,12 @@ spec:
 
 # kubectl get pods
 # kubectl get pod 01-sample
+# kubectl get pod 01-sample -o yaml
+# kubectl get pods -o wide
 
 # kubectl delete -f 01-sample.yml
-
 # kubectl delete pod test
+
+# kubectl logs 01-sample
 
 

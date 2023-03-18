@@ -9,3 +9,6 @@ spec:
     - name: tomcat
       image: tomcat
 
+
+ # to get pod logs
+#  kubectl logs 02-multi -c nginx
