@@ -7,3 +7,10 @@ delete:		## Delete Cluster, Same as Destroy
 	@sh delete.sh
 destroy:	## Destroy Cluster, Same as Delete
 	@sh delete.sh
+
+
+# To setup minikube & client using make file & terraform
+
+# make setup
+
+# make destroy
