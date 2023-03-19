@@ -28,9 +28,9 @@ spec:
 
 #  kubectl exec -it debug bash  -- kubernetes pod container shell interactive access (inside pod)
 
-#  ping service-03 -- verify the service ip
+        #  ping service-03 -- verify the service ip
 
-#  curl service-03 -- test the access
+        #  curl service-03 -- test the access
 
 
 
