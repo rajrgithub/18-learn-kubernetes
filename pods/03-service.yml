@@ -1,0 +1,38 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 03-service
+  labels:
+    name: 03-service
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-03
+spec:
+  selector:
+    name: 03-service
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+
+# kubectl apply -f 03-service.yml
+
+#  kubectl run debug --image=rkalluru/debug:centos7  -- pod container
+
+#  kubectl exec -it debug bash  -- kubernetes pod container shell interactive access (inside pod)
+
+#  ping service-03 -- verify the service ip
+
+#  curl service-03 -- test the access
+
+
+
+
+
