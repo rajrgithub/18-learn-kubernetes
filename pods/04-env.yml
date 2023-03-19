@@ -9,4 +9,26 @@ spec:
       env:
         - name: URL
           value: example.com
-
+# kubectl apply -f 04-env.yml
+#  kubectl exec 04-env env
+---
+# To load bunch of values use configMap
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 04-env1
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+      envFrom:
+        - configMapRef:
+            name: 04-cm
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: 04-cm
+data:
+  URL: example.com
+  ENV: prod.example.com
