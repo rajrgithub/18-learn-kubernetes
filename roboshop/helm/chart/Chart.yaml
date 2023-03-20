@@ -13,7 +13,7 @@ version: 1.0
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ --set component=user
 
 #   Passing Values from files
-#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install frontend ./chart/ --set-file frontend.yml
-#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install catalogue ./chart/ --set-file catalogue.yml
-#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ --set-file user.yml
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install frontend ./chart/ -f frontend.yml
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install catalogue ./chart/ -f catalogue.yml
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ -fuser.yml
 
