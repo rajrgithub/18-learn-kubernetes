@@ -7,5 +7,5 @@ spec:
     component: {{ .Values.component }}
   ports:
     - protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: {{ .Values.port }}
+      targetPort: {{ .Values.port }}

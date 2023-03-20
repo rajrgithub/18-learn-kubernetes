@@ -7,8 +7,13 @@ version: 1.0
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm ls
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm delete test
 #
-#
+#   Passing Values from Command Line
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install catalogue ./chart/ --set component=catalogue
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install cart ./chart/ --set component=cart
 #  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ --set component=user
+
+#   Passing Values from files
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install frontend ./chart/ --set-file frontend.yml
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install catalogue ./chart/ --set-file catalogue.yml
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ --set-file user.yml
 
