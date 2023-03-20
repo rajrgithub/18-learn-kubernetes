@@ -25,6 +25,7 @@ spec:
     component: frontend
   ports:
     - protocol: TCP
+     # service port
       port: 80
   # nginx port i.e., port of nginx in pod
       targetPort: 80
@@ -90,7 +91,7 @@ spec:
           value: "true"
         - name: MONGO_URL
           # AWS paramter value of prod.catalogue.DOCDB_URL
-          # Also allow manually the access todocdb in security group by adding 10.100.0.0/16
+          # Also allow manually the access to docdb in security group by adding 10.100.0.0/16
           value: "mongodb://admin1:RoboShop123@prod-docdb-cluster.cluster-cmoi2t1a1os3.us-east-1.docdb.amazonaws.com:27017/catalogue?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
 ---
 apiVersion: v1
