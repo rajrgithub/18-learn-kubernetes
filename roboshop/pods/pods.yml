@@ -115,7 +115,7 @@ spec:
     spec:
       containers:
         - name: catalogue
-          image: rkalluru/cart
+          image: rkalluru/catalogue
           env:
             - name: DOCUMENTDB
               value: "true"
