@@ -1,4 +1,14 @@
 apiVersion: v2
 name: roboshop
 version: 1.0
+  
+  
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install test ./chart/
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm ls
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm delete test
+#
+#
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install catalogue ./chart/ --set component=catalogue
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install cart ./chart/ --set component=cart
+#  [ centos@workstation ~/18-learn-kubernetes/roboshop/helm ]$ helm install user ./chart/ --set component=user
 
