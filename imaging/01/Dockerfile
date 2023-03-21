@@ -1,0 +1,3 @@
+#INSTRUCTION arguments
+FROM centos
+
